@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/start_recording"
+        android:title="@string/start_recording"
+        android:icon="@drawable/fab_mic"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/stop_recording"
+        android:title="@string/stop_recording"
+        android:icon="@drawable/ic_menu_pause"
+        app:showAsAction="always"/>
+
+</menu>

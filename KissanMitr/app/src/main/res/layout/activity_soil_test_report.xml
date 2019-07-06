@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Kissan Id"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvKissanId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:hint="Unique Id" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Land Available"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_soil_report_land_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Type Of Land"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_soil_report_type_of_land"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Crops Grown"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_soil_report_crop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Estimated Income"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_soil_report_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/et_ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="pH"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/et_nitrogen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="Nitogen"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/et_phosphorus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="Phosphorous"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/et_potassium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="Potassium "
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/plot_graphs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorAccent"
+                    android:text="Plot  Graphs"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="pH Score  :"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/soil_ph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#EE4037" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#F7941F" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4DC37" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#8DC63C" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#3DB54A" />
+
+                    <TextView
+                        android:id="@+id/ph6"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#25ABE4" />
+
+                    <TextView
+                        android:id="@+id/ph7"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#263A8E" />
+
+                    <TextView
+                        android:id="@+id/ph8"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:background="#2B2267" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="0" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="1" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="2" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="3" />
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="4" />
+
+                    <TextView
+                        android:id="@+id/tv_ph5"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="5" />
+
+                    <TextView
+                        android:id="@+id/tv_ph6"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="6" />
+
+                    <TextView
+                        android:id="@+id/tv_ph7"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="7" />
+
+                    <TextView
+                        android:id="@+id/tv_ph8"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:text="8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="Nitrogen Score  :"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_nitrogen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_nitrogen"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:max="150"
+                    android:progressDrawable="@drawable/progress_horizontal_green"
+                    android:progressTint="@android:color/holo_blue_dark"
+                    android:scaleY="2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="Phosphorus Score  :"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_phosphorous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_phosphorous"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:max="150"
+                    android:progressDrawable="@drawable/progress_horizontal_green"
+                    android:progressTint="@android:color/holo_red_dark"
+                    android:scaleY="2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="Potassium Score  :"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_potassium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_potassium"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:max="150"
+                    android:progressDrawable="@drawable/progress_horizontal_green"
+                    android:progressTint="#F4DC37"
+                    android:scaleY="2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="Average Score  :"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_average"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:max="150"
+                    android:progressDrawable="@drawable/progress_horizontal_green"
+                    android:progressTint="#3DB54A"
+                    android:scaleY="2" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/submit_soil_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorAccent"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
